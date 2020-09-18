@@ -1,26 +1,69 @@
-#titulo-principal
-{
+body{background-color: black;}
+
+#titulo-principal {
     color:white;
     background-color:black;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
-     border: 1pt solid white;
-     text-align:center
-    
+    border: 1pt solid white;
+    text-align:center;
+    padding:10px;    
 }
 
-p{  color:white;
+head{background-color: black;}
+div{ background-color: black;}
+
+p{color:white;
 background-color:black;
 font-style: normal;
 font-family: Arial, Helvetica, sans-serif;
- border: 1pt solid white;
- text-align:center
-
+text-align:center;
+padding:10px
 }
 
-
-header.{ color:white;background-color:orangered;font-style: normal;font-family: Arial, Helvetica, sans-serif; border: 1pt solid white;
-
+*{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
 }
-footer{ color:white;background-color:orangered;font-style: normal;font-family: Arial, Helvetica, sans-serif;
-}
+
+a { 
+    color:white;
+    background-color:black;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    margin: 15px;  
+    padding: 10px;  
+    }
+    
+#macadaapple    
+    {padding: 30px}
+
+    .botoes-redes-sociais
+    {
+    color:white;
+    background-color:white;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+     border: 1pt solid white;
+     text-align:center;
+     padding:10px;
+    }
+
+#foto-ultimo-iphone 
+{
+     text-align:center; 
+     padding:10px;
+    }
+
+#tabela-iphone 
+{ 
+    color:white;
+    background-color:black;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    margin:30px;  
+    padding: 10px;
+    
+    }
