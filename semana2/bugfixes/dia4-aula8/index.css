@@ -108,6 +108,8 @@ div:last-child {
 table {
     width: 60%;
     text-align: center;
+    align-items: center;
+    
 }
 
 td button {
