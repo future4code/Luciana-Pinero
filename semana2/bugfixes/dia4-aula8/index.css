@@ -98,6 +98,11 @@ div:last-child {
     text-align: center;
 }
 
+#lupa{
+    width: 60px;
+    height: 20px
+}
+
 table {
     width: 60%;
     text-align: center;
