@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    background-color: #78082a;
+    color: white;
+    height: 80px;
+    padding: 7px;
+    
+    
+}
+
+.menu{
+    color:white;
+    margin: 15px 0;
+}
+
+h1{
+    color:white
+}
+
+
+.menu a{
+    color: white;
+    padding: 7px;
+    margin: 5px;
+
+}
+
+#selected{
+
+    color: coral;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+#profile-picture{
+height: 321px;
+margin: 15px 0;
+
+}
+
+.main{
+
+    margin: 15px 0;
+
+}
+
+
+.footer{
+    background-color: #78082a;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer a{
+    color:white;
+    text-decoration: none; 
+    padding: 7px;
+    margin: 5px;
+}
+
+#santander {
+    height: 100px;
+    margin: 15px 0;
+}
+
+#brognoli {
+    height: 300px;
+    margin: 15px 0;
+}
+
+#labenu {
+    height: 100px;
+    margin: 15px 0;
+}
+
+#mit {
+    height: 50px;
+    margin: 15px 0;
+}
+
+
+#insper {
+    height: 100px;
+    margin: 15px 0;
+}
+
+#ufsc{
+    height: 100px;
+    margin: 15px 0;
+}
+
+button { 
+    background-color: coral;
+    border: 2px solid coral;
+    height: 30px;
+    width: 60px;
+    border-radius: 15px;
+}
+
+form input {
+    display:block
+    
+}
