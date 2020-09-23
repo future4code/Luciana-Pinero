@@ -1,0 +1,228 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+           
+    }
+    
+
+
+div {
+    
+    display: grid;
+    
+}
+
+
+  
+#first-block {
+    background-color: red;
+    height: 9vh;
+    
+   
+    
+}
+
+#segundo-bloco{
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px
+    grid-column-gap: 20px;
+    text-align: center;
+    
+    
+
+}
+
+#terceiro-bloco{
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    grid-column-gap: 20px;
+    text-align: center;
+    
+}
+
+
+.blue-block {
+    background-color: blue;
+    border: 1px solid black;
+    height: 10vh;
+    width: 33vw;
+    justify-items: center;
+    align-items: center;
+    
+  
+}
+
+.yellow-block {
+    background-color: yellow;
+    border: 1px solid black;
+    height: 10vh;
+    width: 33vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.green-block {
+    background-color: green;
+    border: 1px solid black;
+    height: 10vh;
+    width: 33vw;
+    justify-items: center;
+    align-items: center;
+}
+
+
+#quarto-bloco{
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    grid-column-gap: 20px;
+    text-align: center;
+    
+    
+    
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    height: 40vh;
+    width: 50vw;
+    justify-items: center;
+    align-items: center;
+}
+
+#quinto-bloco{
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:10px;
+    margin-block-end: 150px;
+    grid-column-gap: 20px;
+    text-align: center;
+    
+    
+}
+
+.white-block {
+    background-color: white;
+    border: 1px solid black;
+    height: 10vh;
+    width: 33vw;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+/*Mudanca para Mobile*/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+           
+    }
+    
+@media screen and (min-width: 320px) and (max-width: 500px) {
+
+    #segundo-bloco{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 10px;
+        grid-row-gap: 10px;
+        text-align: center;
+        grid-column-start: auto;
+        grid-column-end: auto;
+        
+        
+               
+    
+    }
+    
+    #terceiro-bloco{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 10px;
+        grid-column-gap: 20px;
+        text-align: center;
+        grid-row-gap: 10px;
+        
+    }
+    
+    
+    .blue-block {
+        background-color: blue;
+        border: 1px solid black;
+        height: 10vh;
+        width: 33vw;
+        justify-items: center;
+        align-items: center;
+        
+      
+    }
+    
+    .yellow-block {
+        background-color: yellow;
+        border: 1px solid black;
+        height: 10vh;
+        width: 33vw;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .green-block {
+        background-color: green;
+        border: 1px solid black;
+        height: 10vh;
+        width: 33vw;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    
+    #quarto-bloco{
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+        grid-column-gap: 20px;
+        text-align: center;
+        
+        
+        
+    }
+    
+    .black-block {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        height: 40vh;
+        width: 50vw;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    #quinto-bloco{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 10px;
+        grid-column-gap: 20px;
+        text-align: center;
+        
+        
+        
+        
+    }
+    
+    .white-block {
+        background-color: white;
+        border: 1px solid black;
+        height: 10vh;
+        width: 33vw;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    
+
+}
