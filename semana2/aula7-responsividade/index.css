@@ -4,12 +4,11 @@ body {
     padding: 0;
     margin: 0;
            
-    }
+}
     
 
 
-div {
-    
+div {    
     display: grid;
     
 }
@@ -19,35 +18,48 @@ div {
 #first-block {
     background-color: red;
     height: 9vh;
+      
     
-   
     
 }
 
 #segundo-bloco{
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px
-    grid-column-gap: 20px;
-    text-align: center;
-    
-    
+    margin: 1em;
+    grid-column-gap: 2em;
 
 }
 
 #terceiro-bloco{
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px;
-    grid-column-gap: 20px;
-    text-align: center;
-    
+    margin: 1em;
+    grid-column-gap: 2em;
 }
 
+#quarto-bloco{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em;
+    grid-column-gap: 2em;
+         
+}
 
+#quinto-bloco{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1em;
+    grid-column-gap: 2em;
+    text-align: center;
+        
+}
 .blue-block {
+    display: grid;
     background-color: blue;
     border: 1px solid black;
     height: 10vh;
-    width: 33vw;
+    width: 100%;
     justify-items: center;
     align-items: center;
     
@@ -55,66 +67,54 @@ div {
 }
 
 .yellow-block {
+    display: grid;
     background-color: yellow;
     border: 1px solid black;
     height: 10vh;
-    width: 33vw;
+    width: 100%;
     justify-items: center;
     align-items: center;
 }
 
 .green-block {
+    display: grid;
     background-color: green;
     border: 1px solid black;
     height: 10vh;
-    width: 33vw;
+    width: 100%;
     justify-items: center;
     align-items: center;
 }
 
 
-#quarto-bloco{
-    grid-template-columns: 1fr 1fr;
-    margin: 10px;
-    grid-column-gap: 20px;
-    text-align: center;
-    
-    
-    
-}
+
 
 .black-block {
+    display: grid;
     background-color: black;
     color: white;
     border: 1px solid black;
     height: 40vh;
-    width: 50vw;
+    width: 100%;
     justify-items: center;
     align-items: center;
 }
 
-#quinto-bloco{
-    grid-template-columns: 1fr 1fr 1fr;
-    margin:10px;
-    margin-block-end: 150px;
-    grid-column-gap: 20px;
-    text-align: center;
-    
-    
-}
+
 
 .white-block {
+    display: grid;
     background-color: white;
     border: 1px solid black;
     height: 10vh;
-    width: 33vw;
+    width: 100%;
     justify-items: center;
     align-items: center;
 }
 
 
 
-/*Mudanca para Mobile*/
+/*Mudanca para tablet*/
 
 body {
     width: 100vw;
@@ -124,105 +124,86 @@ body {
            
     }
     
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 421px) and (max-width: 800px) {
 
     #segundo-bloco{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 10px;
-        grid-row-gap: 10px;
-        text-align: center;
-        grid-column-start: auto;
-        grid-column-end: auto;
-        
-        
-               
-    
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 50% 50%;
+        grid-row-gap: 1em;
     }
-    
+
     #terceiro-bloco{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 10px;
-        grid-column-gap: 20px;
-        text-align: center;
-        grid-row-gap: 10px;
-        
+        display:grid;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 50% 50%;
+        grid-row-gap: 1em;
     }
-    
-    
-    .blue-block {
-        background-color: blue;
-        border: 1px solid black;
-        height: 10vh;
-        width: 33vw;
-        justify-items: center;
-        align-items: center;
-        
-      
+
+    #quinto-bloco{
+        display:grid;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 50% 50%;
+        grid-row-gap: 1em;
     }
-    
-    .yellow-block {
-        background-color: yellow;
-        border: 1px solid black;
-        height: 10vh;
-        width: 33vw;
-        justify-items: center;
-        align-items: center;
-    }
-    
+
     .green-block {
+        display: grid;
         background-color: green;
         border: 1px solid black;
         height: 10vh;
-        width: 33vw;
+        width: 100%;
         justify-items: center;
         align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
-    
-    
+
+    #item-11 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+/*Mudanca para celular*/
+
+@media screen and (max-width: 421px) {
+
+    #segundo-bloco{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1em;
+        grid-row-gap: 2em;
+    }
+
+    #terceiro-bloco{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1em;
+        grid-row-gap: 2em;
+    }
+
     #quarto-bloco{
-        grid-template-columns: 1fr 1fr;
-        margin: 10px;
-        grid-column-gap: 20px;
-        text-align: center;
-        
-        
-        
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1em;
+        grid-row-gap: 2em;
     }
-    
+
+    #quinto-bloco{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1em;
+        grid-row-gap: 2em;
+    }
+
     .black-block {
+        display: grid;
         background-color: black;
         color: white;
         border: 1px solid black;
-        height: 40vh;
-        width: 50vw;
-        justify-items: center;
-        align-items: center;
-    }
-    
-    #quinto-bloco{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 10px;
-        grid-column-gap: 20px;
-        text-align: center;
-        
-        
-        
-        
-    }
-    
-    .white-block {
-        background-color: white;
-        border: 1px solid black;
         height: 10vh;
-        width: 33vw;
         justify-items: center;
         align-items: center;
     }
-    
-    
-
 }
