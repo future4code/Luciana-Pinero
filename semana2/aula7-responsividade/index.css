@@ -51,7 +51,7 @@ div {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1em;
     grid-column-gap: 2em;
-    text-align: center;
+    
         
 }
 .blue-block {
@@ -116,14 +116,6 @@ div {
 
 /*Mudanca para tablet*/
 
-body {
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-           
-    }
-    
 @media screen and (min-width: 421px) and (max-width: 800px) {
 
     #segundo-bloco{
@@ -149,14 +141,8 @@ body {
 
     .green-block {
         display: grid;
-        background-color: green;
-        border: 1px solid black;
-        height: 10vh;
-        width: 100%;
-        justify-items: center;
-        align-items: center;
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 3; 
     }
 
     #item-11 {
@@ -199,11 +185,7 @@ body {
 
     .black-block {
         display: grid;
-        background-color: black;
-        color: white;
-        border: 1px solid black;
         height: 10vh;
-        justify-items: center;
-        align-items: center;
+        
     }
 }
