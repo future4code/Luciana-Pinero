@@ -1,82 +1,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-*{
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-}
-
 
 body {
+    font-family: 'Raleway', sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Cabeçalho */
 
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+header{
     background-color: #1f1f24;
     color: #ffffff;
-    height: 70px;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    list-style-type: none;
+    width: 100%;
+    position: fixed; 
+
 }
 
-#selected{
+header section{
+    justify-self: start;
+    align-self: center;
 
+}
+
+nav{
+    justify-self: center;
+    align-self: center;
+}
+
+nav li{
+    display: inline;
+    padding:10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 1.2em;
+}
+
+#login{
+    display: inline;
+    justify-self: center;
+    align-self: center;
+    color:  #ffffff;
+    font-size: 1em;
+    padding: 50px;
+
+}
+
+
+button{
+    border-radius: 60px;
+    background-color:#d2c5b7;
+    color:  #ffffff;
+    font-size: 1.2em;
+    ;
+}
+#selected {
     color: #d2c5b7;
 }
 
-a {
-    color: #ffffff;
-    padding: 7px;
-    margin: 5px;
-    text-decoration: none;
+#logo{
+    height: 130px;
 }
 
-/* Corpo do site */
 
-main {
+/* Conteúdo Principal */
+
+main{
+    display:grid;
+    min-width: height 70vh;
+    padding-top: 140px;
+    padding-bottom: 400px;
+}
+
+main#inicio{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: #ffffff;
-    color: #545458;
-    /* border: 1px solid #545458; */
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main section{
+    margin:10px;
+    padding: 10px;
+}
+
+#microcredito{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+   
+}
+
+#aberturadeconta{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #d2c5b7;
+   
 }
 
 
-/* Rodapé */
 
+/*  Rodapé */
 
-footer {
-    background:#d2c5b7;
-    color: #545458;
-    position: fixed;
+footer{
+    background-color: #d2c5b7;
+    color: #ffffff;
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    list-style-type: none;
+    position: fixed; 
     bottom: 0;
     width: 100%;
-    display: flex;
-    padding: 0 10px;
-    height: 20%;
     
 }
 
+footer section{
+    justify-self: center;
+    align-self: center;
+    padding: 5px;
+}
+.socialmedia{
+    height: 50px;
+}
 
-/* Responsivo para Iphone*/
+#midias-sociais{
+    display: flex;
+    flex-direction: column;
+}
 
-@media (min-width:375px max-width: 667px)
- {
-    footer {
-        position: relative;
-        padding: 0;
+
+/* Site Responsivo */
+
+@media screen and (max-width:375px) {
+
+    .responsive{
+        display:flex;
+        flex direction:column;
     }
-    section {
-        grid-template-columns: 1fr;
-    }
+
+    
+
 }
