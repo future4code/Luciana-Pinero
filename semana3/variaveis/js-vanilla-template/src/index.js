@@ -121,8 +121,25 @@
 // Troque a segunda comida da sua lista pela inserida pelo usuário. Imprima na tela a nova lista
 
     // let arrayComidasPreferidas = ["nhoque","carne","salada","camarão","pizza"]
-    // let food=prompt("Qual sua comida preferida?")
-    // console.log(`Resposta: ${food}`)
-    // arrayComidasPreferidas [1]= food
+    // let food = prompt("Qual sua comida preferida?")
+    //    arrayComidasPreferidas[1] = food  
+    //     console.log(arrayComidasPreferidas)
+    
+    
+// 4.Faça um programa que contenha um array com 3 perguntas de Sim ou Não, armazenado em uma variável. 
+// Por exemplo: "Você está usando uma roupa azul hoje?". Depois, siga os passos:
+
+
+// let perguntas = ["Você está usando uma roupa azul hoje?", "Você quer sair hoje?", "Você gosta de morar em Florianópolis?"]
+
+
+// // a)Crie uma nova variável, contendo um array com as respostas. Utilize o tipo booleano para cada resposta.
+// let respostas = [false, true, true]
+
+// // b) Imprima na tela todas as perguntas seguidas por suas respectivas respostas. 
+
+// console.log(perguntas[0], respostas[0])
+// console.log(perguntas[1], respostas[1])
+// console.log(perguntas[2], respostas[2])
 
     
