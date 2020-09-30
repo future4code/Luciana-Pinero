@@ -78,8 +78,87 @@
 // Vamos criar programas que lidem com entradas do usuário! Faça um programa que pergunta ao usuário
 // qual a idade dele e imprima no console se ele/ela pode dirigir (apenas maiores de idade).
 
+// 1. Faça um prompt para receber a idade do usuário e guarde em uma variável. Garanta que essa variável é do tipo Number,
+// você deve usar o cast para number para isso.
+
 // const idade = Number (prompt("Qual a sua idade?"))
+
+// 3. Agora veja se essa idade do usuário corresponde à idade mínima que permite dirigir. Se sim, imprima no console
+// "Você pode dirigir", caso contrário, imprima "Você não pode dirigir."
 
 // if(idade>=18) {
 //     console.log ("Oba!! você já pode dirigir!")
+// }else {
+//     console.log("Você ainda não pode dirigir!")
+// }
+
+// EXERCÍCIO 5
+// // Agora faça um programa que verifica que turno do dia um aluno estuda. Peça para digitar M (matutino) ou
+// // V (Vespertino) ou N (Noturno). Imprima no console a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!". Utilize o bloco if/else
+
+// const turno = prompt ("Qual turno você estuda? Digite M para Matutino, V para Vespertino e N para Noturno.").toUpperCase()
+
+// if(turno ==="M"){
+//     console.log ("Bom Dia!")
+// }
+// else if(turno ==="V"){
+//     console.log("Boa Tarde!")
+// }
+// else if(turno ==="N"){
+//     console.log("Boa Noite!")
+// }
+// else{
+//     console.log("Resposta Errada, faça de novo")
+// }
+
+// EXERCICIO 6
+// Repita o exercício anterior, mas utilizando a estrutura de switch case agora.
+
+// const turno = prompt ("Qual turno você estuda? Digite M para Matutino, V para Vespertino e N para Noturno.").toUpperCase()
+// switch(turno){
+//     case "M":
+//         console.log ("Bom Dia!")
+//         break
+//     case "V":
+//         console.log("Boa Tarde!")
+//         break
+//     case "N":
+//         console.log("Boa noite")
+//         break
+//     default:
+//         console.log("Resposta Errada, faça de novo")
+//         break
+// }
+
+// EXERCICIO 7
+
+// Considere a situação: você vai no cinema com um amigo ou amiga, porém ele/ela só assiste filme do gênero fantasia e se o
+// ingresso está abaixo de 15 reais. Faça um código que pergunta ao usuário qual o gênero de filme que vão assistir e outra
+// pergunta sobre o preço do ingresso, então verifique se seu amigo ou amiga vai topar assistir o filme. Caso positivo, imprima
+// no console a mensagem: "Bom filme!", caso contrário, imprima "Escolha outro filme :("
+
+// const genero = prompt("Qual gênero de filme vocês vão assistir?").toLowerCase()
+// const preco= Number (prompt (" Qual o preço do ingresso?"))
+
+// if(genero === "fantasia" && preco <= 15) {
+//     console.log("Bom filme!")
+// }
+// else{
+//     console.log("Escolha outro filme :(")
+// }
+
+// Desafio
+// Modifique o código do exercício 7 para, antes de imprimir a mensagem "Bom filme!", pergunte ao usuário, pelo
+// prompt que snack ele vai comprar (pipoca, chocolate, doces, etc) e imprima no console as mensagens
+// "Bom filme!" e "... com [SNACK]", trocando [SNACK] pelo que o usuário colocou no input.
+
+// const genero = prompt("Qual gênero de filme vocês vão assistir?").toLowerCase()
+// const preco= Number (prompt (" Qual o preço do ingresso?"))
+// const snack= prompt("Qual snack você vai comprar? Pipoca, Chocolate, Pão de queijo...?")
+
+// if(genero === "fantasia" && preco <= 15) {
+//     console.log(`Bom filme! e ...com ${snack}`) || console.log ("Bom filme e ...com " + snack)
+// }
+// else{
+//     console.log("Escolha outro filme :(")
 // }
