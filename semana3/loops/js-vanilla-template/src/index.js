@@ -67,17 +67,25 @@
 // d. Escreva um programa que:
 // **Crie** um novo array contendo strings, da seguinte forma: "O elemento do índex `i` é: `numero`"
 //  - **Imprima** este novo array
-const arrayPalavras=[ "O", "elemento", "do", "index", "i", "é", "número"]
-const arrayOriginal=[ 1, 3, 5, 33, 32, 21, 7, 8, 9, 10]
 
-let texto=""
+// const arrayOriginal=[ 1, 3, 5, 33, 32, 21]
 
-for (let numero of arrayOriginal){
-    texto="O elemento do index + "i" é: + numero arrayPalavras.push(texto) i++
-    }
+// for(let i=0; i< arrayOriginal.length; i++){
+// let numero= arrayOriginal[i]
+//     console.log("O elemento do index "+i+" é "+numero)
+// }
 // 
 
 // e) Escreva um programa que imprima no console o maior e o menor números contidos no array 
 // original:
 
-const arrayOriginal=[ 1, 3, 5, 33, 32, 21, 7, 8, 9, 10]
+// const arrayOriginal = [1,3,5,33,32]
+// maiorNumero = arrayOriginal[0]
+// menorNumero = arrayOriginal[0]
+
+// for(let elemento of arrayOriginal){
+
+//     if(maiorNumero < elemento) {maiorNumero = elemento}
+//     if(menorNumero > elemento) {menorNumero = elemento}
+// }    
+// console.log("O maior número é maior: "+maiorNumero+" e o menor é ]/~´;.,ç: "+menorNumero)
