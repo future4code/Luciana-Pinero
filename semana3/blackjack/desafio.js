@@ -38,13 +38,13 @@ ${carta1Computador.texto}. Deseja Comprar mais uma carta?`);
 
   let revelacao = confirm("Deseja comprar mais uma carta?");
 
-  if (revelacao) {
-   while (pontos < 21 && confirm(Deseja comprar uma nova carta?))
-    let novaCarta =comprarCarta()
-    arrayJogador.push(novaCarta.texto)
-  } else {
-    console.log("Segue o jogo");
-  }
+//   if (revelacao) {
+//    while (pontos < 21 && confirm(Deseja comprar uma nova carta?))
+//     let novaCarta =comprarCarta()
+//     arrayJogador.push(novaCarta.texto)
+//   } else {
+//     console.log("Segue o jogo");
+//   } TENTAR FAZER DE NOVO!! 
 
   let pontuacaoJogador = carta1Jogador.valor + carta2Jogador.valor;
   let pontuacaoComputador = carta1Computador.valor + carta2Computador.valor;
