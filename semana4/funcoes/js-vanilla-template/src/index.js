@@ -160,15 +160,16 @@
 const arrayNum = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
 let quantNumPar = (array) => {
     const arrayPar =[]
-    for(let arrayPar of arrayNum){
-        if(array[i]%2 === 0){arrayPar.push (arrayNum)
+    for(let i =0; i<array.length; i++){
+        if(array%2 === 0){
+            arrayPar.push (array[i])
         }
     }
     return arrayPar.length
-
 }
-const tamanho = quantNumPar(arrayNum)
-console.log(tamanho)
+
+let novaArrayPar = quantNumPar(arrayNum)
+console.log(novaArrayPar)
 
 // d. Reescreva seu código anterior (do item c) de tal forma que 
 // ele utilize a função do item b para verificar se o número é par
