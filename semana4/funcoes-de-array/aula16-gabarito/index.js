@@ -29,7 +29,7 @@ function imprimirExtrato(){
     // AQUI VEM A IMPLEMENTAÇÃO
 
     arrDespesas.forEach((despesa)=>{
-        if (despesa.tipo === "alimentacao"){
+        if (despesa.tipo === "alimentação"){
             gastoAlimentacao+= despesa.valor;
         }else if (despesa.tipo === "utilidades") {
             gastoUtilidades+= despesa.valor;
@@ -90,7 +90,16 @@ function filtrarDespesas(){
     let valorMax = Number(document.getElementById('valorFiltroMax').value)
 
 
-    let despesasFiltradas // AQUI NESSA VARIÁVEL VEM A IMPLEMENTAÇÃO
+    let despesasFiltradas = arrDespesas.filter(
+        (despesa) => {
+        if(
+            (tipoFiltro === despesa.tipo || tipoFiltro ==="todos") && 
+            despesa.valor>= valorMin && 
+            despesa.valor<= valorMax
+        ) {
+            return true
+        }
+    }); // AQUI NESSA VARIÁVEL VEM A IMPLEMENTAÇÃO
 
     imprimirDespesas(despesasFiltradas)
 }
