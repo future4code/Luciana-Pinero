@@ -93,12 +93,26 @@
 
 //  Exercicio 3
 
-const quantidadeDeNumerosPares = 7 // incluir um numero N
-let i = 0
-while(i < quantidadeDeNumerosPares) { // ser apenas < pois se inclui o = ele soma mais 1, pois o indice começa no zero.
-  console.log(i*2)
+// const quantidadeDeNumerosPares = 7 // incluir um numero N
+// let i = 0
+// while(i < quantidadeDeNumerosPares) { // ser apenas < pois se inclui o = ele soma mais 1, pois o indice começa no zero.
+//   console.log(i*2)
 
-  i++ // Adicionar um i++ para evitar o loop infinito
-}
+//   i++ // Adicionar um i++ para evitar o loop infinito
+// }
 
 // Resposta: este codigo não funciona porque falta incluir o N, precisa ajustar a condição e incluir o incremento (i++). 
+
+// Exercicio 4
+
+// let qualTriangulo =(a,b,c)=>{
+
+//     if(a === b && b === c && a ===c){
+//         console.log("O triangulo é Equilátero")
+//     }else if (a !== b && b !== c && a !== c){
+//         console.log("O triangulo é Escaleno")
+//     }else 
+//     console.log (" O triangulo é Isosceles")
+// }
+
+// let resultado = qualTriangulo (10,11,10)
