@@ -40,3 +40,15 @@
 //  Valor Impresso no Console: "Quantidade total de números " 14 ( através da propriedade Length), no console.log (array1.length) será impresso o
 // valor 6 e no console.log (array2.length) será impresso o valor 8.
 
+// Exercicio 4: 
+
+// O que ela faz: A função percorre um array de números através do for of criando uma condicional if que alterará as variaveis iniciais até o final 
+// do loop.
+
+// Como faz: É dado um array de numeros iniciais, através do for of é percorrido todos os números do array com 2 condicionais "se" (if)
+// na qual Se o elemento disposto no Array [0] < do que a variavel numero1 = infinity ( maior de todas ) a variavel assume o valor do Array [0] e assim 
+// suscessivamente. Na segunda condição se o elemento disposto no Array [0] > do que a variavel numero2 = 0 a variavel numero2 assume o valor de Array [0]
+// e assim suscessivamente fazendo o loop nas duas condições de forma apartada até o final do array. 
+
+// Valor Impresso no console: (numero1) -10 (numero2) 1590
+
