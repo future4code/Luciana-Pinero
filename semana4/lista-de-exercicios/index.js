@@ -52,3 +52,30 @@
 
 // Valor Impresso no console: (numero1) -10 (numero2) 1590
 
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Exercicios de Logica de Programação
+
+// 1.
+
+// arrayParaPercorrer = [1,5,6,11,12,17,21]
+
+// let i=0
+// while(i<arrayParaPercorrer.length){
+//     console.log(arrayParaPercorrer[i])
+//     i++
+// }
+
+
+
+// for (let i =0; i<arrayParaPercorrer.length; i++){
+//     console.log(arrayParaPercorrer[i])
+// }
+
+
+// for(let numero of arrayParaPercorrer){
+//     console.log(numero)
+    
+// }
+
+
