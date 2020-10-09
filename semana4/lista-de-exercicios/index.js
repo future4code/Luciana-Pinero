@@ -90,3 +90,15 @@
 // c) (false || true) && (false || true) - retorna true pois os dois primeiros e os dois ultimos boleanos são true.
 // d) !(false && true) || !(true && true) - true || false - retorna true porque os dois elementos  não são false.
 // e) !(true) && !(true) || (true && true && true) - retorna true
+
+//  Exercicio 3
+
+const quantidadeDeNumerosPares = 7 // incluir um numero N
+let i = 0
+while(i < quantidadeDeNumerosPares) { // ser apenas < pois se inclui o = ele soma mais 1, pois o indice começa no zero.
+  console.log(i*2)
+
+  i++ // Adicionar um i++ para evitar o loop infinito
+}
+
+// Resposta: este codigo não funciona porque falta incluir o N, precisa ajustar a condição e incluir o incremento (i++). 
