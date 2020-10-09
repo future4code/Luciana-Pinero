@@ -19,7 +19,6 @@
 // O que ela faz: A função investeDinheiro calcula qual será o resultado dos valores aplicados (valor) em cada tipo de investimento 
 // (tipoDeInvestimento).
 
-
 // Como faz: Quando a função é invocada, é informado o valor e o tipo de investimento escolhido. Assim é percorrido todos os tipos através 
 // do Loop Switch que encontra as caracteristicas de rentabilidade de cada investimento ( fator de multiplicação), imprimindo no console o 
 // valor vezes a rentabilidade escolhida do investimento.
@@ -28,4 +27,16 @@
 // investeDinheiro informa que o fator de multiplicação de ações será o valor de 1.1, o valor total impresso será de 165. 
 // No console.log (segundoMontante) erá impresso o valor de tesouro Direto para o montante de 200. No caso como a função 
 // investeDinheiro não informa o fator de multiplicação de tesouro Direto a mensagem impressa será "Tipo de Investimento informado incorreto"
+
+// Exercicio 3:
+
+// O que ela faz: A função foi criada para que percorra um Array de números identificados os números pares e impares e adicionando-os em novos
+// arrays. Para que como resultado, possamos ver a quantidade de elementos no array principal e nos novos arrays criados. 
+
+// Como faz: A função For Of ( para cada) percorre todo o array principal calculando quais são os elementos pares através do operador 
+// "Resto da Divisão" e incluindo uma condicional que se ( If) o elemento for par ele fará a inclusão no novo array1 através do "Push" senão (else)
+// fará a inclusão dos demais elementos ( impares) no Array 2.
+
+//  Valor Impresso no Console: "Quantidade total de números " 14 ( através da propriedade Length), no console.log (array1.length) será impresso o
+// valor 6 e no console.log (array2.length) será impresso o valor 8.
 
