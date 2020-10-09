@@ -78,4 +78,15 @@
     
 // }
 
+// Exercicio 2
 
+// Conceitos de Operadores Logicos:
+// && - retorna true se todos forem true
+// || - retorna false se todos forem false
+// ! - sempre retorna o boleano oposto 
+
+// a) true, false, true - Retorna false, pois nem todos os boleanos são true.
+// b) (false) || false - retorna false, pois os 2 primeiros boleanos são false.
+// c) (false || true) && (false || true) - retorna true pois os dois primeiros e os dois ultimos boleanos são true.
+// d) !(false && true) || !(true && true) - true || false - retorna true porque os dois elementos  não são false.
+// e) !(true) && !(true) || (true && true && true) - retorna true
