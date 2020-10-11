@@ -160,20 +160,63 @@
 
 // Exercicios de Funcoes:
 
-// 1
-// const arrayDeNumeros =[1,2,3,4,5,6]
-// const maiorNumero (x,y) => {
+// 1 REFAZEr!!!!
 
+// const arrayDeNumeros =[3,2,74,5,6]
+// const maiorNumero = arrayDeNumeros[0]
+// const menorNumero = arrayDeNumeros[0]
+// let indiceMaior = 0
+// let indiceMenor = 0
+
+// for ( let i=0; i<arrayDeNumeros.length; i++ ){
+//     if (maiorNumero < arrayDeNumeros[i]){
+//        maiorNumero = arrayDeNumeros[i]
+//        indiceMaior = i
+//        console.log(maiorNumero)
+//     } 
+//     if (menorNumero > arrayDeNumeros[i]){
+//         menorNumero = arrayDeNumeros[i]
+//         indiceMenor = i
+//         console.log(menorNumero)
+//     }
 // }
 
-// const menorNumero (x,y) =>{
+// arrayDeNumeros.splice(indiceMenor,1)
+// arrayDeNumeros.splice(indiceMaior,1)
 
+// console.log (arrayDeNumeros)
+
+
+// const maiorNumero = 0
+
+// let copiaDeArray = arrayDeNumeros.map ((elemento, indice, array) => {
+// return elemento
+// })
+
+// for (let elemento of arrayDeNumeros) {
+//     if (elemento > maiorNumero){
+//         console.log ( `O maior número é ${elemento}`)
+//     }
 // }
+
+
 
 // 2 Exercicio
 
-let hello = () => {
-    alert ("Hello Future 4")
-}
+// let hello = () => {
+//     alert ("Hello Future 4")
+// }
 
-const imprimir = hello ()
+// const imprimir = hello ()
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// Exercicio de Objetos
+
+// 1. Explique com as suas palavras o que são e quando podemos/devemos utilizar arrays e objetos
+
+// Objetos são um conjunto de informações (dados) que são dispostos de uma forma mais organizada no código. 
+// os objetos permitem que guardemos uma informação de forma desordenada, já um array permite que guardemos 
+// as informações de forma ordenada. E no array conseguimos incluir dados, substituir, retirar etc tudo de acordo
+// à posição. 
+
