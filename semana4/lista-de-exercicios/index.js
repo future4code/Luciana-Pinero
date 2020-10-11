@@ -116,3 +116,64 @@
 // }
 
 // let resultado = qualTriangulo (10,11,10)
+
+// Exercicio 5
+
+// let valorUm = Number(prompt("Escreva um número"))
+// let valorDois = Number(prompt("Escreva outro número"))
+
+// let valorUmMaior = valorUm > valorDois
+// let valorDoisMaior = valorDois > valorUm
+// let valorIgual = valorUm === valorDois
+// let diferencaUmMaior = valorUm-valorDois
+// let diferencaDoisMaior = valorDois-valorUm
+
+
+// if (valorUmMaior){
+//     console.log (`O maior é :${valorUm}`)
+// } else if (valorDoisMaior){
+//     console.log (`O maior é ${valorDois}`)
+// } else {
+//     console.log ("Os valores são iguais")
+// }
+
+// if (valorUm % valorDois === 0) {
+//     console.log (`${valorUm} é divisivel por ${valorDois}`)
+// }else{
+//     console.log (`${valorUm} não é divisivel por ${valorDois}`)}
+
+// if (valorDois % valorUm === 0) {(
+//     console.log (`${valorDois} é divisivel por ${valorUm}`)
+// }else{
+//     console.log (`${valorDois} não é divisivel por ${valorUm}`)}
+ 
+// if (valorUmMaior){
+//     console.log (`A diferença entre eles é ${diferencaUmMaior}`)
+// } else if (valorDoisMaior){
+//     console.log (`A diferença entre eles é ${diferencaDoisMaior}`) 
+// } else if (valorIgual) {
+//     console.log ("Os Números são iguais")
+// }
+    
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Exercicios de Funcoes:
+
+// 1
+// const arrayDeNumeros =[1,2,3,4,5,6]
+// const maiorNumero (x,y) => {
+
+// }
+
+// const menorNumero (x,y) =>{
+
+// }
+
+// 2 Exercicio
+
+let hello = () => {
+    alert ("Hello Future 4")
+}
+
+const imprimir = hello ()
