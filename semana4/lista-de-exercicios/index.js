@@ -309,3 +309,82 @@
 // })
 
 // console.log ( soCriancas)
+
+// 2.Em todos os itens deste exercício, você terá que escrever uma função cuja entrada seja um array. Para testes, 
+// considere: 
+
+// const array = [1, 2, 3, 4, 5, 6]
+
+// a) Escreva uma função que **retorne** um array com as entradas multiplicadas por 2. Isto é `[2, 4, 6, 8, 10, 12]`.
+
+// let dobro = array.map((numeros, index,array) =>{
+//     return (numeros*2)
+// })
+
+// console.log (dobro)
+
+// b) Escreva uma função que **retorne** um array com as entradas multiplicadas por 3 e como strings. Isto é: `["3", "6", "9", "15", "18"]` 
+
+// const array = [1, 2, 3, 4, 5, 6]
+
+// let triploString = array.map((numeros, index,array) =>{
+//     return String(numeros*3)
+// })
+
+// console.log (triploString)
+
+
+
+
+// c) Escreva uma função que **retorne** um array de strings dizendo: "${número} é par/impar". 
+// Isto é: `["1 é impar", "2 é par", "3 é impar", "4 é par", "5 é impar", "6 é par"]`
+
+// const array = [1, 2, 3, 4, 5, 6]
+
+// let paridade = array.map((numeros, index,array) =>{
+//     if (numeros%2===0){
+//         return (`${numeros} é par`)
+//     } else {
+//         return (`${numeros} é ímpar`)
+//     }
+    
+// })
+
+// console.log (paridade)
+
+// Imagine que você trabalhe num parque de diversões, como desenvolvedor(a). 
+// As suas tarefas são sempre com o intuito de ajudar a automação de alguns processos internos do parque. 
+// Uma das atrações principais dele é a montanha russa do terror. As filas são muito grandes e 
+// todas as pessoas de várias idades insistem entrar no brinquedo, mesmo sabendo que não 
+// podem. Considere, então, essas pessoas:
+
+const pessoas = [
+	{ nome: "Paula", idade: 12, altura: 1.8},
+	{ nome: "João", idade: 20, altura: 1.3},
+	{ nome: "Pedro", idade: 15, altura: 1.9},
+	{ nome: "Luciano", idade: 22, altura: 1.8},
+	{ nome: "Artur", idade: 10, altura: 1.2},
+	{ nome: "Soter", idade: 70, altura: 1.9}
+]
+
+// A regra para entrar na montanha russa do terror é: ter, no mínimo, 1.5m de altura; ser mais velho do que 14 anos e mais novo do que 60 anos.
+
+// a) Escreva uma função que receba este array e devolva outro array somente com as pessoas que tem permissão de entrar no brinquedo
+
+// let podeEntrar = pessoas.filter ((elemento,index,array)=>{
+//     if((elemento.idade >=14) && (elemento.altura >= 1.5) && (elemento.idade <= 60)){
+//         return true
+//     }return false
+// })
+
+// console.log (podeEntrar)
+
+// b) Escreva uma função que receba este array e devolva outro array somente com as pessoas que não podem entrar no brinquedo.
+
+// let naoPodeEntrar = pessoas.filter ((elemento,index,array)=>{
+//     if((elemento.idade <14) || (elemento.altura < 1.5) || (elemento.idade >= 60)){
+//         return true
+//     }return false
+// })
+
+// console.log (naoPodeEntrar)
