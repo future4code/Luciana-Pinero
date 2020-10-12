@@ -243,12 +243,33 @@
 // Venha assistir ao filme NOME DO FILME, de ANO, dirigido por DIRETOR e estrelado por ATOR 1, ATRIZ 2, ATOR n. A lista de 
 // atores/atrizes deve ser impressa inteira, independente do tamanho da lista
 
-let filmeFavorito ={
-    nome: "Procurando Nemo",
-    ano: 2003 ,
-    diretor: "Andrew Stanton",
-    atores: [`Nemo, Dory e Marlin!! `]
-}
+// let filmeFavorito ={
+//     nome: "Procurando Nemo",
+//     ano: 2003 ,
+//     diretor: "Andrew Stanton",
+//     atores: [`Nemo, Dory e Marlin!! `]
+// }
 
-let imprime = (`Venha assistir ${filmeFavorito.nome}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atores} `)
-console.log (imprime)
+// let imprime = (`Venha assistir ${filmeFavorito.nome}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atores} `)
+// console.log (imprime)
+
+// 4. Crie um objeto que represente uma pessoa qualquer, com as propriedades de nome, idade, email e endereco. Crie uma função 
+// chamada anonimizarPessoa, que deverá retornar um novo objeto com as mesmas propriedades, mas com a string ANÔNIMO no lugar 
+// do nome. O objeto original deve ser mantido com o nome da pessoa.
+
+// let euObjeto ={
+//     nome: "Luciana Verdinelli",
+//     idade: 34 ,
+//     email: "luverdinelli@gmail.com",
+//     endereco: "Rua Luiz Oscar de Carvalho, 207"
+// }
+
+// let anonimizarPessoa = () => {
+//     let novoObjeto = {
+//         ...euObjeto,
+//         nome: "Anônimo"
+//     }
+//     return novoObjeto
+// }
+
+// console.log (anonimizarPessoa(euObjeto))
