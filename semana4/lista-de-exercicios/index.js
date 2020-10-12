@@ -220,3 +220,22 @@
 // as informações de forma ordenada. E no array conseguimos incluir dados, substituir, retirar etc tudo de acordo
 // à posição. 
 
+// 2.Crie uma função chamada criaRetangulo que recebe como parâmetros dois lados (lado1 e lado2) e retorna um objeto 
+// com 4 informações: largura (lado1), altura (lado2), perímetro (2 * (lado1 + lado2)) e área (lado1 * lado2).
+
+// const lado1= 10
+// const lado2=20
+
+let criaRetangulo = (lado1, lado2) => {
+    return {
+
+    largura: lado1,
+    altura: lado2, 
+    perimetro: (2*(lado1+lado2)),
+    area: (lado1*lado2)
+
+}
+}
+
+let resultado = criaRetangulo(20,10)
+console.log (resultado)
