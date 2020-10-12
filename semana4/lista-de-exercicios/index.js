@@ -358,14 +358,14 @@
 // todas as pessoas de várias idades insistem entrar no brinquedo, mesmo sabendo que não 
 // podem. Considere, então, essas pessoas:
 
-const pessoas = [
-	{ nome: "Paula", idade: 12, altura: 1.8},
-	{ nome: "João", idade: 20, altura: 1.3},
-	{ nome: "Pedro", idade: 15, altura: 1.9},
-	{ nome: "Luciano", idade: 22, altura: 1.8},
-	{ nome: "Artur", idade: 10, altura: 1.2},
-	{ nome: "Soter", idade: 70, altura: 1.9}
-]
+// const pessoas = [
+// 	{ nome: "Paula", idade: 12, altura: 1.8},
+// 	{ nome: "João", idade: 20, altura: 1.3},
+// 	{ nome: "Pedro", idade: 15, altura: 1.9},
+// 	{ nome: "Luciano", idade: 22, altura: 1.8},
+// 	{ nome: "Artur", idade: 10, altura: 1.2},
+// 	{ nome: "Soter", idade: 70, altura: 1.9}
+// ]
 
 // A regra para entrar na montanha russa do terror é: ter, no mínimo, 1.5m de altura; ser mais velho do que 14 anos e mais novo do que 60 anos.
 
@@ -388,3 +388,62 @@ const pessoas = [
 // })
 
 // console.log (naoPodeEntrar)
+
+// 4. Você foi contratado por um escritório médico para gerar e-mails automáticos para seus clientes, lembrando-os de sua 
+// consulta marcada; ou avisa-los que foi cancelada. Considere, então, essas consultas:
+
+    // A sua tarefa é criar um **array** com os e-mails para cada um deles. Existem dois padrões de e-mail. 
+    // Para as consultas **não canceladas** é:
+
+
+    // Olá, ${ Sr./Sra. } ${ nome da pessoa }. Estamos enviando esta mensagem para
+    // ${ lembrá-lo / lembrá-la } da sua consulta no dia ${ data da consulta }. Por favor, acuse
+    // o recebimento deste e-mail.
+    
+
+    // Para as consultas **canceladas** é:
+
+
+    // Olá, ${ Sr./Sra. } { nome da pessoa }. Infelizmente, sua consulta marcada
+    // para o dia ${ data da consulta } foi cancelada. Se quiser, pode entrar em 
+    // contato conosco para remarcá-la
+
+    
+//     const consultas = [
+//     	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+//     	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+//     	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+//     	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+//     ]
+
+// let resolucao = []
+// consultas.filter ((elemento,index,consultas)=>{
+//     if((elemento.cancelada === false) && (elemento.genero === "masculino")){
+
+//         return resolucao +=(`Olá Sr. ${elemento.nome}.Estamos enviando esta mensagem para lembrá-lo da sua consulta no dia ${elemento.dataDaConsulta}. Por Favor, acuse o recebimento deste e-mail.`)
+
+//     } else if ((elemento.cancelada === false) && (elemento.genero === "feminino"))
+
+//         return resolucao +=(
+//             `Olá Sra. ${elemento.nome}. Estamos enviando esta mensagem para lembrá-la da sua consulta no dia ${elemento.dataDaConsulta}. Por Favor, acuse o recebimento deste e-mail.`)
+//     })
+
+//     console.log (resolucao)
+
+//     let resolucaoDois = []
+//     consultas.filter ((elemento,index,consultas)=>{
+
+//         if((elemento.cancelada === true) && (elemento.genero === "masculino")){
+
+//             return resolucaoDois +=(`Olá Sr. ${elemento.nome}. Infelizmente sua consulta marcada para o dia ${elemento.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarca-la`)
+    
+//         } else if ((elemento.cancelada === true) && (elemento.genero === "feminino"))
+
+//             return resolucaoDois +=(`
+//             Olá Sra. ${elemento.nome}. Infelizmente sua consulta marcada para o dia ${elemento.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarca-la`)
+//         })
+    
+//     console.log (resolucaoDois)    
+
+
+ 
