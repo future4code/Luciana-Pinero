@@ -160,44 +160,38 @@
 
 // Exercicios de Funcoes:
 
-// 1 REFAZEr!!!!
+// 1 Escreva uma função que receba um array de números e imprima na tela o segundo maior e o segundo menor número. 
+// Em seguida, invoque essa função. (Não é permitido usar funções de ordenação de vetores.)
 
-// const arrayDeNumeros =[3,2,74,5,6]
-// const maiorNumero = arrayDeNumeros[0]
-// const menorNumero = arrayDeNumeros[0]
-// let indiceMaior = 0
-// let indiceMenor = 0
+const arrayDeNumeros =[3,2,74,5,6]
+let maiorNumero = arrayDeNumeros[0]
+let menorNumero = arrayDeNumeros[0]
 
-// for ( let i=0; i<arrayDeNumeros.length; i++ ){
-//     if (maiorNumero < arrayDeNumeros[i]){
-//        maiorNumero = arrayDeNumeros[i]
-//        indiceMaior = i
-//        console.log(maiorNumero)
-//     } 
-//     if (menorNumero > arrayDeNumeros[i]){
-//         menorNumero = arrayDeNumeros[i]
-//         indiceMenor = i
-//         console.log(menorNumero)
-//     }
-// }
+for (let numero of arrayDeNumeros){
+    if (maiorNumero < numero){
+        maiorNumero = numero
+    }if (menorNumero > numero){
+        menorNumero = numero}
+}
+    
+let indice1 = arrayDeNumeros.indexOf(maiorNumero)
+arrayDeNumeros.splice(indice1,1)
+let indice2 = arrayDeNumeros.indexOf(menorNumero)
+arrayDeNumeros.splice(indice2,1)
 
-// arrayDeNumeros.splice(indiceMenor,1)
-// arrayDeNumeros.splice(indiceMaior,1)
+let segundoMaior = arrayDeNumeros[0]
+let segundoMenor = arrayDeNumeros[0]
 
-// console.log (arrayDeNumeros)
+for (let numero of arrayDeNumeros){
+    if (segundoMaior < numero){segundoMaior = numero}
+    if (segundoMenor > numero){segundoMenor = numero}
+}
+
+console.log(`O segundo maior número é ${segundoMaior}`)
+console.log(`O segundo menor número é ${segundoMenor}`)
 
 
-// const maiorNumero = 0
 
-// let copiaDeArray = arrayDeNumeros.map ((elemento, indice, array) => {
-// return elemento
-// })
-
-// for (let elemento of arrayDeNumeros) {
-//     if (elemento > maiorNumero){
-//         console.log ( `O maior número é ${elemento}`)
-//     }
-// }
 
 
 
@@ -444,6 +438,7 @@
 //         })
     
 //     console.log (resolucaoDois)    
+
 
 // 5. Agora, pediram para você ajudar a fazer uma funcionalidade de um banco digital. Antes de explicar a sua tarefa, você precisa entender 
 // como eles guardam as contas dos clientes. Basicamente, eles salvam o nome do clientes, o saldo total e uma lista contendo todas as compras
