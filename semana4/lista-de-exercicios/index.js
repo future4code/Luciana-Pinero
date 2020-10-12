@@ -273,3 +273,39 @@
 // }
 
 // console.log (anonimizarPessoa(euObjeto))
+
+// -------------------------------------------------------------------------------------------------------------------
+
+// Exercicio de Funções de Array
+
+// Considere um array com o seguinte formato:
+
+// array= [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ]
+
+// a) Faça uma função que retorne um **novo array** só com os adultos (pessoas com idade igual ou superior a 20)
+
+// let adultos = (adulto, index,array) =>{
+//     if(adulto.idade >= 18){
+//         return true
+//     }
+//     return false
+// }
+
+// let soAdultos = array.filter(adultos)
+
+// console.log (soAdultos)
+
+// b) Faça uma função que retorne um **novo array** só com as crianças/adolescentes (pessoas com idade inferior a 20)
+
+// let soCriancas = array.filter ((criancas,index,array)=>{
+//     if(criancas.idade <=18){
+//         return true
+//     }return false
+// })
+
+// console.log ( soCriancas)
