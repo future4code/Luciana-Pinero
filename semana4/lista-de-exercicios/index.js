@@ -223,19 +223,32 @@
 // 2.Crie uma função chamada criaRetangulo que recebe como parâmetros dois lados (lado1 e lado2) e retorna um objeto 
 // com 4 informações: largura (lado1), altura (lado2), perímetro (2 * (lado1 + lado2)) e área (lado1 * lado2).
 
-// const lado1= 10
-// const lado2=20
 
-let criaRetangulo = (lado1, lado2) => {
-    return {
+// let criaRetangulo = (lado1, lado2) => {
+//     return {
 
-    largura: lado1,
-    altura: lado2, 
-    perimetro: (2*(lado1+lado2)),
-    area: (lado1*lado2)
+//     largura: lado1,
+//     altura: lado2, 
+//     perimetro: (2*(lado1+lado2)),
+//     area: (lado1*lado2)
 
+// }
+// }
+
+// let resultado = criaRetangulo(20,10)
+// console.log (resultado)
+
+// 3. Crie um objeto para representar seu filme favorito. Ele deve ter as seguintes propriedades: título, ano, diretor 
+// e atores/atrizes (lista com pelo menos 2 atores/atrizes). Imprima na tela a seguinte string, baseada nos valores do objeto:
+// Venha assistir ao filme NOME DO FILME, de ANO, dirigido por DIRETOR e estrelado por ATOR 1, ATRIZ 2, ATOR n. A lista de 
+// atores/atrizes deve ser impressa inteira, independente do tamanho da lista
+
+let filmeFavorito ={
+    nome: "Procurando Nemo",
+    ano: 2003 ,
+    diretor: "Andrew Stanton",
+    atores: [`Nemo, Dory e Marlin!! `]
 }
-}
 
-let resultado = criaRetangulo(20,10)
-console.log (resultado)
+let imprime = (`Venha assistir ${filmeFavorito.nome}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atores} `)
+console.log (imprime)
