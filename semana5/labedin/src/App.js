@@ -33,7 +33,7 @@ function App() {
         <h2>Email</h2>
         <CardPequenoUm 
           imagem="https://image.flaticon.com/icons/png/512/20/20061.png" 
-          nome="Email: luverdinelli@gmail.com " 
+          nome="Email: luverdinelli@gmail.com" 
           
           
         />
