@@ -1,79 +1,24 @@
 import React from "react";
-import "./styles.css";
-import axios from "axios";
+import FormPage from "./components/FormPage";
+import UserListPage from "./components/UserListPage";
+
 
 class App extends React.Component {
   state = {
-    playlists: [],
-    playlistValue: ""
+    formPage: true
   };
 
-  componentDidMount = () => {
-    this.pegarPlaylists();
-  };
-
-  pegarPlaylists = () => {
-    axios
-      .get(
-        "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
-        {
-          headers: {
-            Authorization: "severo-dumont"
-          }
-        }
-      )
-      .then((resposta) => {
-        this.setState({ playlists: resposta.data.result.list });
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
-  };
-
-  criarPlaylist = () => {
-    const body = {
-      name: this.state.playlistValue
-    };
-
-    axios
-      .post(
-        "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
-        body,
-        {
-          headers: {
-            Authorization: "severo-dumont"
-          }
-        }
-      )
-      .then((res) => {
-        this.setState({ playlistValue: "" });
-        this.pegarPlaylists();
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
-  };
-
-  onChangePlaylistValue = (event) => {
-    this.setState({ playlistValue: event.target.value });
+  changePage = () => {
+    this.setState({ formPage: !this.state.formPage });
   };
 
   render() {
-    const renderedPlaylists = this.state.playlists.map((playlist) => {
-      return <p key={playlist.id}>{playlist.name}</p>;
-    });
+    const currentPage = this.state.formPage ? <FormPage /> : <UserListPage />;
 
     return (
       <div className="App">
-        <div>
-          <input
-            placeholder="Nome da Playlist"
-            value={this.state.playlistValue}
-            onChange={this.onChangePlaylistValue}
-          />
-          <button onClick={this.criarPlaylist}>Criar Playlist</button>
-        </div>
-        {renderedPlaylists}
+        {currentPage}
+        <button onClick={this.changePage}>Mudar de Página</button>
       </div>
     );
   }
