@@ -52,12 +52,14 @@ class UserListPage extends React.Component {
   render() {
     const renderUserList = this.state.userList.map((usuario) => {
       return (
-        <p key={usuario.id}>
+         <p key={usuario.id}>
           {usuario.name}
           <DeleteButton onClick={() => this.deleteUser(usuario.id)}>
             X
           </DeleteButton>
         </p>
+        
+        
       );
     });
 
