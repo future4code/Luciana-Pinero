@@ -1,5 +1,19 @@
 import React from 'react'
 import axios from 'axios'
+import styled from "styled-components";
+
+const Createbutton = styled.button`
+  color: white;
+  background-color: #F36003;
+  margin-left: 10px;
+  font-size:35px
+`;
+
+const Styleinput = styled.input`
+font-size: 35px;
+width:500px
+`
+
 
 class CreatePlayList extends React.Component{
 state = {
@@ -17,7 +31,7 @@ axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists"
         Authorization: "luciana-pinero-dumont"
     }
     }).then(response => {
-	alert ("Usuario Criado com Sucesso")
+	alert ("Playlist Criada com Sucesso!! ")
     this.setState ({nameValue : ""})
     }).catch(error => {
         console.log(error.message)
@@ -34,8 +48,8 @@ onChangeNameValue = (event) => {
         console.log(this.state)
         return(
             <div>
-                <input value = { this.state.nameValue} onChange = {this.onChangeNameValue} />
-                <button onClick={this.createPlayList}> Criar PlayList </button>
+                <Styleinput placeholder = {"Dê um nome para sua Playlist!"} value = { this.state.nameValue} onChange = {this.onChangeNameValue} />
+                <Createbutton onClick={this.createPlayList}> Criar PlayList </Createbutton>
             </div>
         )
     }

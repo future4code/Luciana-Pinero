@@ -1,47 +1,74 @@
-import React from 'react'
-import styled from 'styled-components'
-// import ViewPlayListTracks from './components/ViewPlayListTracks'
+import axios from "axios";
+import React from "react";
+import styled from "styled-components";
 
 const DeleteButton = styled.button`
-color:red;
-margin-left: 10px;
-`
+  color: white;
+  background-color: #F36003;
+  margin-left: 10px;
+  font-size:15px
+`;
 
-class ViewAllPlayLists extends React.Component{
+const PlayList = styled.p`
+  color: black;
+  margin-left: 10px;
+  font-size:25px
+`;
 
-    state= {
-    viewplaylist:[     
-            {
-                "id" : "1",
-                "name" : "Axé"
-            },
-            
-            {
-                "id" : "2",
-                "name" : "Rock"
-            }
-            
-            
-        
-        ]   
-    }
-    render(){
+const baseUrl =
+  "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
 
-        const renderPlayList = this.state.viewplaylist.map (playlist =>{
-        return <p key={playlist.id}>
-            {playlist.name}
-            <DeleteButton>X</DeleteButton>
-            </p>    
-        })
+const axiosConfig = {
+  headers: {
+    Authorization: "luciana-pinero-dumont"
+  }
+};
 
-        return(
-            <div>
-                {renderPlayList}
-                {/* {ViewPlayListTracks} */}
+class ViewAllPlayLists extends React.Component {
+  state = {
+    listPlaylists: []
+  };
 
-            </div>
-        )
-    }
+  componentDidMount = () => {
+    this.getAllPlayLists();
+  };
+
+  getAllPlayLists = () => {
+    axios
+      .get(baseUrl, axiosConfig)
+      .then((response) => {
+        this.setState({ listPlaylists: response.data.result.list });
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
+
+  deletePlayList = (playlistId) => {  
+    axios.delete(`${baseUrl}/${playlistId}`, axiosConfig)
+      .then((response) => {
+        alert("PlayList apagada com sucesso!");
+        this.getAllPlayLists();
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
+
+  render() {
+    const renderPlayList = this.state.listPlaylists.map((playlist) => {
+      return (
+        <PlayList key={playlist.id}>
+          {playlist.name}
+          <DeleteButton onClick={() => this.deletePlayList(playlist.id)}>
+            DELETE
+          </DeleteButton>
+        </PlayList>
+      );
+    });
+
+    return <div>{renderPlayList}</div>;
+  }
 }
 
-export default ViewAllPlayLists
+export default ViewAllPlayLists;
