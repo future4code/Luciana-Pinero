@@ -4,8 +4,10 @@ import {
     Photo, 
     Name,      
     Age,      
-    Bio
+    Bio,
+    Divflex,
 } from './styled';
+import {colorCool, secondColor} from "../../constants/colors"
 
 import LikeBottom from '../LikeBottom/LikeBottom';
 import DislikeBottom from '../DislikeBottom/DislikeBottom';
@@ -13,13 +15,17 @@ import DislikeBottom from '../DislikeBottom/DislikeBottom';
 const PersonInfo = (props) => {
     return (
         <ContainerInfo>
-            <Photo src = {""} />
-            <Name>Person Fake </Name>
-            <Age>XX</Age>
-            <Bio>alala quer like</Bio>
-        
+            <Photo src = {props.photo} />
+            <br></br>
+            <Divflex>
+            <Name>{props.name}</Name>
+            <Age>{props.age}</Age>
+            </Divflex>
+            <Bio>{props.bio}</Bio>
+        <Divflex>
         <DislikeBottom />
         <LikeBottom />
+        </Divflex>
         </ContainerInfo>
     )
 };

@@ -1,2 +1,2 @@
-export const coolColor = "ff5c5c"
-export const secondColor = "e0e0e0"
+export const coolColor = "#FE3C72"
+export const secondColor = "#424242"

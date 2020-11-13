@@ -1,25 +1,37 @@
 import React, {useState} from 'react';
 import Profile from './components/Profile/Profile.js'
-;
+import ShowPersonScreen from './screens/ShowPersonScreen/ShowPersonScreen.js'
+import ShowMatchScreen from './screens/ShowMatchScreen/ShowMatchScreen.js';
+import styled from "styled-components";
 
-const data = {
-  id: "xUrxMGvODWZa4ZASbfwx",
-  age: 26,
-  name: "Carol Danvers",
-  photo: "https://s1.r29static.com/bin/entry/7e8/340x408,85/2138124/image.webp",
-  bio: "Gosto de voar e de gatos. Procuro relações que respeitem minha independência.",
-  like:false
-}
+const ScreenContainer = styled.div`
+padding:60px 0;
+display:flex;
+justify-content:center;
+
+`
 
 function App() {
-  const [personData, setPersonData] = useState ({data})
 
+  const [currentPage, setCurrentPage] = useState ("Person")
+
+  const chooseCurrentScreen = () => {
+   switch (currentPage){
+     case "Person":
+      return <ShowPersonScreen />
+     case "Match":
+      return <ShowMatchScreen />
+      default: 
+      return <div> Erro página não encontrada. </div>
+   } 
+  } 
   return (
-    <div className="App">
-      <Profile dados= {personData} />
-      < ShowMatchScreen />
-      < ShowPersonScreen />
-    </div>
+    <ScreenContainer>
+      
+      {chooseCurrentScreen()}    
+           
+      
+    </ScreenContainer>
   );
 }
 

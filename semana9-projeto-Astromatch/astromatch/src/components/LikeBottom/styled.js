@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Heartlike = styled.img`
-  width: 30px;
-  height: 30px;
+  display:inline;
+  width: 90px;
+  height: 90px;
   cursor: pointer;
 `;
