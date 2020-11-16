@@ -9,7 +9,6 @@ export const CardContainer = styled.div`
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */ 
   margin: 12px;
   `;
 
