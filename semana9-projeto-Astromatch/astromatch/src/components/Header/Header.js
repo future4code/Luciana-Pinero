@@ -7,9 +7,11 @@ function Header() {
     return (
       <div>
         <HeaderContainer> 
+          <button>Escolher</button>  
           <Title>
             ASTROMATCH
           </Title>
+          <button>Lista</button>  
         </HeaderContainer>
       </div>
     );

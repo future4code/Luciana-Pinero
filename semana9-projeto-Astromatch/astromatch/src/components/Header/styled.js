@@ -3,23 +3,19 @@ import {coolColor, secondColor} from "../../constants/colors"
 
 export const HeaderContainer = styled.div `
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    width:30vw;
+    border-bottom:1px solid lightgray;
     margin:0;
-    height: 80px;
+    align-items:center;
     background-color: ${coolColor};
+    padding: 0 8px;
     
        
 `
 
 
 export const Title = styled.h1`
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- color: ${secondColor};
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: ${secondColor};
 `
-
-
-
-
-

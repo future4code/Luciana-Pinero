@@ -1,38 +1,16 @@
 import React, {useState} from 'react';
-import Profile from './components/Profile/Profile.js'
-import ShowPersonScreen from './screens/ShowPersonScreen/ShowPersonScreen.js'
-import ShowMatchScreen from './screens/ShowMatchScreen/ShowMatchScreen.js';
-import styled from "styled-components";
+import ResetButton from './components/ResetButton/ResetButton';
+import Container from './components/Container/Container'
+import ChooseButtons from './components/ShowPersonScreen/ChooseButtons';
 
-const ScreenContainer = styled.div`
-padding:60px 0;
-display:flex;
-justify-content:center;
-
-`
-
-function App() {
-
-  const [currentPage, setCurrentPage] = useState ("Person")
-
-  const chooseCurrentScreen = () => {
-   switch (currentPage){
-     case "Person":
-      return <ShowPersonScreen />
-     case "Match":
-      return <ShowMatchScreen />
-      default: 
-      return <div> Erro página não encontrada. </div>
-   } 
-  } 
+function App () {
   return (
-    <ScreenContainer>
-      
-      {chooseCurrentScreen()}    
-           
-      
-    </ScreenContainer>
-  );
+    <div>
+      <Container />
+      <ResetButton /> 
+
+    </div>
+  )
 }
 
 export default App;

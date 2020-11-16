@@ -1,0 +1,27 @@
+import React from 'react';
+import MatchListItem from './MatchListItem'
+import styled, { ListContainer } from './styled'
+
+function ShowMatchScreen () {
+const matches = [
+          {
+            "id": "71gMbZs2txS9LDvGK5Ew",
+            "age": 26,
+            "name": "Anitta",
+            "photo": "https://images.outgo.com.br/clients/1/events/2923/Anitta-Perfil-4-1.png",
+            "bio": "Amo cachorros e sair para dançar. Procuro alguém animado e sem neuras."
+          }
+        ]
+
+    return(
+    <ListContainer>  
+        {matches.map((profile) =>{
+            return <MatchListItem profile = {profile}/>
+        })}
+
+    </ListContainer>
+    )
+    
+}
+
+export default ShowMatchScreen
