@@ -1,17 +1,19 @@
-import React from 'react';
+import Axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import MatchListItem from './MatchListItem'
 import styled, { ListContainer } from './styled'
+import axios from 'axios'
+
 
 function ShowMatchScreen () {
-const matches = [
-          {
-            "id": "71gMbZs2txS9LDvGK5Ew",
-            "age": 26,
-            "name": "Anitta",
-            "photo": "https://images.outgo.com.br/clients/1/events/2923/Anitta-Perfil-4-1.png",
-            "bio": "Amo cachorros e sair para dançar. Procuro alguém animado e sem neuras."
-          }
-        ]
+  const [matches, setMatches] = useState ([])
+
+useEffect (() => {
+axios.get ("https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:Luciana-Pinero/matches")
+.then (response => { console.log (response)
+setMatches (response.data.matches)
+})
+},[]);
 
     return(
     <ListContainer>  
