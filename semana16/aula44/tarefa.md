@@ -185,4 +185,30 @@ b. Retorne um filme a partir de um nome específico;
 SELECT * FROM MoviesX
 WHERE name = "DONA FLOR E SEUS DOIS MARIDOS";
 
+c. Retorne o id, título e sinopse dos filmes com avaliação mínima de 7
 
+SELECT id, name, synopsis FROM MoviesX WHERE evaluation > 7
+
+Exercicio 7
+
+Escreva uma query que:
+a. Retorna um filme cujo título contenha a palavra vida
+
+SELECT * FROM MoviesX WHERE name LIKE "%vida%";
+
+b. Realize a pesquisa de um filme, ou seja: pesquise se o termo de busca está contido no título ou na sinopse. Utilize qualquer TERMO DE BUSCA para exemplificar
+
+SELECT * FROM MoviesX
+WHERE name LIKE "%você%" OR
+      synopsis LIKE "%Recife%";
+
+c. Procure por todos os filmes que já tenham lançado
+
+SELECT * FROM MoviesX
+WHERE release_date_of < "2021-01-14";
+
+d. Procure por algum filme que já tenha lançado, com o termo de busca contido no título ou sinopse e com a avaliação maior do que `7`.
+
+SELECT * FROM MoviesX
+WHERE release_date_of < "2021-01-14" AND name LIKE "%você%" OR
+      synopsis LIKE "%você%" AND evaluation > 7;
