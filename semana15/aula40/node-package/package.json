@@ -1,0 +1,17 @@
+{
+  "name": "node-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": " node ./src/exercicio2/numeros.js" ,
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "search-personal-infos":"clear && node ./src/exercicio1/searchPersonalInfo.js" ,
+    "tarefas":" node ./src/exercicio3/tarefas.js" 
+  },
+  "keywords": [],
+  "author": "luverdinelli <luverdinelli@gmail.com>",
+  "license": "ISC"
+}
