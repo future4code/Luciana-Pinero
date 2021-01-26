@@ -110,25 +110,39 @@ Antes de poder fazer o endpoint de cadastro, precisamos de uma forma para gerar 
 
 Abaixo, há uma função que faz isso, com o tempo de expiração de 1 minuto:
 
-```tsx
-import * as jwt from "jsonwebtoken";
-
-const expiresIn = "1min"
-
-const generateToken = (id: string): string => {
-  const token = jwt.sign(
-    {
-      id
-    },
-    process.env.JWT_KEY as string,
-    {
-      expiresIn
-    }
-  );
-  return token;
-}
-```
 
 *a. O que a linha `as string` faz? Por que precisamos usar ela ali?*
 
+R: Ela faz com que o JWT_KEY seja determinado que ele realmente é uma String e não undefinded.
+
+
 *b.* *Agora, crie a função que gere o token. Além disso, crie um type  para representar o input dessa função.*
+
+R: ./services/token
+
+Pronto, com essas três funções preparadas podemos criar o nosso endpoint. As informações dele são:
+
+- *Verbo/Método*: POST
+- *Path*: `/signup`
+- *Input:* O body da requisição deve ser
+
+    ```json
+    {
+    	"email": "email do usuário",
+    	"password": "senha do usuário"
+    }
+    ```
+
+- *Output*: O body da resposta deve ser
+
+    ```json
+    {
+    	"token": "token gerado pelo jwt"
+    }
+    ```
+
+*a. Crie o endpoint que realize isso, com as funções que você implementou anteriormente*
+
+*b. Altere o seu endpoint para ele não aceitar um email vazio ou que não possua um `"@"`*
+
+*c. Altere o seu endpoint para ele só aceitar uma senha com 6 caracteres ou mais*
