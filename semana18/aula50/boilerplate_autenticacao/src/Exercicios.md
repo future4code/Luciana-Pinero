@@ -100,3 +100,35 @@ import knex from "knex";
 	}
 
 
+## Exercicio 3
+
+Antes de poder fazer o endpoint de cadastro, precisamos de uma forma para gerar o token de autenticação do usuário. Para isso, vamos usar o JWT. Ele possui uma função que permite gerar o token do usuário, que recebe três informações:
+
+- os dados que serão salvos no token (no nosso caso, o id);
+- a chave secreta usada pra criptografar o token;
+- algumas configurações, como o tempo de expiração
+
+Abaixo, há uma função que faz isso, com o tempo de expiração de 1 minuto:
+
+```tsx
+import * as jwt from "jsonwebtoken";
+
+const expiresIn = "1min"
+
+const generateToken = (id: string): string => {
+  const token = jwt.sign(
+    {
+      id
+    },
+    process.env.JWT_KEY as string,
+    {
+      expiresIn
+    }
+  );
+  return token;
+}
+```
+
+*a. O que a linha `as string` faz? Por que precisamos usar ela ali?*
+
+*b.* *Agora, crie a função que gere o token. Além disso, crie um type  para representar o input dessa função.*
