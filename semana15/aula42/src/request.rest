@@ -1,0 +1,12 @@
+https://us-central1-missao-newton.cloudfunctions.net/astroMatch/mateus/person
+
+###
+
+POST https://us-central1-missao-newton.cloudfunctions.net/astroMatch/mateus/choose-person
+Content-Type: application/json
+Authorization: jfkdsjafjskajflka
+
+{
+    "id":"CLY730pyvFlEnukb0W79",
+    "choice": true
+}
