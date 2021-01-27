@@ -35,6 +35,7 @@ app.post('/user/signup', createUser)
 app.post("/user/login", login)
 app.get('/user/:id', getUserById)
 app.post('/user/edit', editUser)
+app.get ('/address/:cep')
 
 app.put('/task', createTask)
 app.get('/task/:id', getTaskById)
