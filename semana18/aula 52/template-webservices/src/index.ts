@@ -8,6 +8,8 @@ import editUser from './endpoints/editUser'
 import createTask from './endpoints/createTask'
 import getTaskById from './endpoints/getTaskById'
 import login from './endpoints/login'
+import { getAddressInfo } from './endpoints/getAddressInfo'
+import { postUser }  from './endpoints/postUser'
 
 dotenv.config()
 
@@ -27,21 +29,18 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.get("/", async function(req,res){
-   res.send(await connection.raw('show tables'))
-})
 
 app.post('/user/signup', createUser)
 app.post("/user/login", login)
 app.get('/user/:id', getUserById)
 app.post('/user/edit', editUser)
-app.get ('/address/:cep')
+app.get ('/address/:cep', getAddressInfo)
+app.post('/user/createUser', postUser)
 
 app.put('/task', createTask)
 app.get('/task/:id', getTaskById)
 
-app.listen(3003, () => {
-   console.log('Servidor rodando na porta 3003')
+app.listen(3000, () => {
+   console.log('Servidor rodando na porta 3000')
 })
 
-debugger
