@@ -1,0 +1,10 @@
+### createUser
+PUT http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+	"name": "Luciana Scott",
+	"email":"luciana@dundermifflin.com",
+	"password": "thelulu",
+	"role": "NORMAL"
+}
